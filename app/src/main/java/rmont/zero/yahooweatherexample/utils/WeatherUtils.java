@@ -1,4 +1,4 @@
-package rmont.zero.utils;
+package rmont.zero.yahooweatherexample.utils;
 
 import rmont.zero.yahooweatherexample.R;
 

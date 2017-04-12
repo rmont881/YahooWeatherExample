@@ -1,5 +1,5 @@
 
-package rmont.zero.models;
+package rmont.zero.yahooweatherexample.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

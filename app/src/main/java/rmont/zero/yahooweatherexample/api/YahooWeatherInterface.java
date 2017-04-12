@@ -1,4 +1,4 @@
-package rmont.zero.api;
+package rmont.zero.yahooweatherexample.api;
 
 import com.google.gson.JsonElement;
 
@@ -7,7 +7,6 @@ import java.util.Map;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.QueryMap;
-import rmont.zero.models.Query;
 
 /**
  * Created by rmontgomery on 4/10/17.

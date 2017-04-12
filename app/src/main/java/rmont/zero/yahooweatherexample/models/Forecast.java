@@ -1,10 +1,10 @@
 
-package rmont.zero.models;
+package rmont.zero.yahooweatherexample.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Condition {
+public class Forecast {
 
     @SerializedName("code")
     @Expose
@@ -12,9 +12,15 @@ public class Condition {
     @SerializedName("date")
     @Expose
     private String date;
-    @SerializedName("temp")
+    @SerializedName("day")
     @Expose
-    private String temp;
+    private String day;
+    @SerializedName("high")
+    @Expose
+    private String high;
+    @SerializedName("low")
+    @Expose
+    private String low;
     @SerializedName("text")
     @Expose
     private String text;
@@ -35,12 +41,28 @@ public class Condition {
         this.date = date;
     }
 
-    public String getTemp() {
-        return temp;
+    public String getDay() {
+        return day;
     }
 
-    public void setTemp(String temp) {
-        this.temp = temp;
+    public void setDay(String day) {
+        this.day = day;
+    }
+
+    public String getHigh() {
+        return high;
+    }
+
+    public void setHigh(String high) {
+        this.high = high;
+    }
+
+    public String getLow() {
+        return low;
+    }
+
+    public void setLow(String low) {
+        this.low = low;
     }
 
     public String getText() {

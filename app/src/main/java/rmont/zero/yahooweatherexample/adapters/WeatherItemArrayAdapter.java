@@ -1,18 +1,17 @@
-package rmont.zero.adapters;
+package rmont.zero.yahooweatherexample.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import rmont.zero.models.Forecast;
-import rmont.zero.utils.WeatherUtils;
+import rmont.zero.yahooweatherexample.models.Forecast;
+import rmont.zero.yahooweatherexample.utils.WeatherUtils;
 import rmont.zero.yahooweatherexample.R;
 
 /**
@@ -55,7 +54,6 @@ public class WeatherItemArrayAdapter extends BaseAdapter {
         Forecast forecast = values.get(position);
         firstLine.setText("  " +forecast.getDay() + "  -   High: " + forecast.getHigh() + "  Low:" + forecast.getLow());
         secondLine.setText(values.get(position).getText());
-        String s = values.get(position).getText();
         imageView.setImageResource(WeatherUtils.getImageIdForType(forecast.getText()));
 
         return rowView;

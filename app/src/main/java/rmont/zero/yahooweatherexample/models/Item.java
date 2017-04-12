@@ -1,5 +1,5 @@
 
-package rmont.zero.models;
+package rmont.zero.yahooweatherexample.models;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;
